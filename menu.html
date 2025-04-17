@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlissfulBites| Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>BlissfulBites</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Discount Banner -->
+  <section class="discount-banner">
+    <marquee behavior="scroll" direction="left">🎉 Enjoy 20% OFF on All Combos! Order Now! 🎉</marquee>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu-section">
+    <h2>Our Full Menu</h2>
+    <div class="grid-container">
+      <!-- 1 Veggie Burger -->
+      <div class="card">
+        <img src="./images/burger-veggie.jpg" alt="Veggie Burger" />
+        <h3>Veggie Burger</h3>
+        <p>Crispy patty with fresh lettuce and tomatoes</p>
+        <p>Price: ₹149</p>
+        <input type="number" min="1" value="1" id="qty-burger" />
+        <button onclick="addToCart('Veggie Burger', 149, document.getElementById('qty-burger').value)">Add to Cart</button>
+      </div>
+      <!-- 2 Margherita Pizza -->
+      <div class="card">
+        <img src="./images/Margherita Pizza.jpg" alt="Margherita Pizza" />
+        <h3>Margherita Pizza</h3>
+        <p>Classic cheese and tomato pizza</p>
+        <p>Price: ₹199</p>
+        <input type="number" min="1" value="1" id="qty-pizza" />
+        <button onclick="addToCart('Margherita Pizza', 199, document.getElementById('qty-pizza').value)">Add to Cart</button>
+      </div>
+      <!-- 3 Veg Samosa -->
+      <div class="card">
+        <img src="./images/Veg Samosa.jpg" alt="Veg Samosa" />
+        <h3>Veg Samosa</h3>
+        <p>Spiced potato filling in crispy pastry</p>
+        <p>Price: ₹30</p>
+        <input type="number" min="1" value="1" id="qty-samosa" />
+        <button onclick="addToCart('Veg Samosa', 30, document.getElementById('qty-samosa').value)">Add to Cart</button>
+      </div>
+      <!-- 4 French Fries -->
+      <div class="card">
+        <img src="./images/French Fries.jpg" alt="French Fries" />
+        <h3>French Fries</h3>
+        <p>Golden and crispy potato fries</p>
+        <p>Price: ₹99</p>
+        <input type="number" min="1" value="1" id="qty-fries" />
+        <button onclick="addToCart('French Fries', 99, document.getElementById('qty-fries').value)">Add to Cart</button>
+      </div>
+      <!-- 5 Creamy Pasta -->
+      <div class="card">
+        <img src="./images/Creamy Pasta.webp" alt="Creamy Pasta" />
+        <h3>Creamy Pasta</h3>
+        <p>Penne pasta in rich cheese sauce</p>
+        <p>Price: ₹179</p>
+        <input type="number" min="1" value="1" id="qty-pasta" />
+        <button onclick="addToCart('Creamy Pasta', 179, document.getElementById('qty-pasta').value)">Add to Cart</button>
+      </div>
+      <!-- 6 Club Sandwich -->
+      <div class="card">
+        <img src="./images/Club Sandwich.jpg" alt="Club Sandwich" />
+        <h3>Club Sandwich</h3>
+        <p>Triple layered sandwich with veggies and cheese</p>
+        <p>Price: ₹129</p>
+        <input type="number" min="1" value="1" id="qty-sandwich" />
+        <button onclick="addToCart('Club Sandwich', 129, document.getElementById('qty-sandwich').value)">Add to Cart</button>
+      </div>
+      <!-- 7 Garden Salad -->
+      <div class="card">
+        <img src="./images/garden-salad.webp" alt="Garden Salad" />
+        <h3>Garden Salad</h3>
+        <p>Mixed greens with vinaigrette dressing</p>
+        <p>Price: ₹89</p>
+        <input type="number" min="1" value="1" id="qty-salad" />
+        <button onclick="addToCart('Garden Salad', 89, document.getElementById('qty-salad').value)">Add to Cart</button>
+      </div>
+      <!-- 8 Vanilla Ice Cream -->
+      <div class="card">
+        <img src="./images/Vanilla Ice Cream.webp" alt="Vanilla Ice Cream" />
+        <h3>Vanilla Ice Cream</h3>
+        <p>Creamy and cold dessert scoop</p>
+        <p>Price: ₹79</p>
+        <input type="number" min="1" value="1" id="qty-icecream" />
+        <button onclick="addToCart('Vanilla Ice Cream', 79, document.getElementById('qty-icecream').value)">Add to Cart</button>
+      </div>
+      <!-- 9 Lemon Iced Tea -->
+      <div class="card">
+        <img src="./images/Lemon Iced Tea.jpg" alt="Lemon Iced Tea" />
+        <h3>Lemon Iced Tea</h3>
+        <p>Refreshing lemon flavored tea</p>
+        <p>Price: ₹49</p>
+        <input type="number" min="1" value="1" id="qty-icetea" />
+        <button onclick="addToCart('Lemon Iced Tea', 49, document.getElementById('qty-icetea').value)">Add to Cart</button>
+      </div>
+      <!-- 10 Gulab Jamun -->
+      <div class="card">
+        <img src="./images/Gullabjamun.jpg" alt="Gulab Jamun" />
+        <h3>Gulab Jamun</h3>
+        <p>Sweet and soft delight</p>
+        <p>Price: ₹120</p>
+        <input type="number" min="1" value="1" id="qty-gulab" />
+        <button onclick="addToCart('Gulab Jamun', 120, document.getElementById('qty-gulab').value)">Add to Cart</button>
+      </div>
+      <!-- 11 Rasgulla -->
+      <div class="card">
+        <img src="./images/Rasgulla.jpg" alt="Rasgulla" />
+        <h3>Rasgulla</h3>
+        <p>Spongy and juicy treat</p>
+        <p>Price: ₹100</p>
+        <input type="number" min="1" value="1" id="qty-rasgulla" />
+        <button onclick="addToCart('Rasgulla', 100, document.getElementById('qty-rasgulla').value)">Add to Cart</button>
+      </div>
+      <!-- 12 Kaju Katli -->
+      <div class="card">
+        <img src="./images/Kaju kattli.jpg" alt="Kaju Katli" />
+        <h3>Kaju Katli</h3>
+        <p>Premium cashew sweet</p>
+        <p>Price: ₹180</p>
+        <input type="number" min="1" value="1" id="qty-kaju" />
+        <button onclick="addToCart('Kaju Katli', 180, document.getElementById('qty-kaju').value)">Add to Cart</button>
+      </div>
+      <!-- 13 Besan Ladoo -->
+      <div class="card">
+        <img src="./images/besan laddu.jpg" alt="Besan Ladoo" />
+        <h3>Besan Ladoo</h3>
+        <p>Traditional festive treat</p>
+        <p>Price: ₹90</p>
+        <input type="number" min="1" value="1" id="qty-ladoo" />
+        <button onclick="addToCart('Besan Ladoo', 90, document.getElementById('qty-ladoo').value)">Add to Cart</button>
+      </div>
+      <!-- 14 Coconut Barfi -->
+      <div class="card">
+        <img src="./images/coconut-barfi.jpg" alt="Coconut Barfi" />
+        <h3>Coconut Barfi</h3>
+        <p>Soft and milky coconut barfi</p>
+        <p>Price: ₹110</p>
+        <input type="number" min="1" value="1" id="qty-barfi" />
+        <button onclick="addToCart('Coconut Barfi', 110, document.getElementById('qty-barfi').value)">Add to Cart</button>
+      </div>
+      <!-- 15 Jalebi -->
+      <div class="card">
+        <img src="./images/Jalebi.jpg" alt="Jalebi" />
+        <h3>Jalebi</h3>
+        <p>Sweet and crispy loops</p>
+        <p>Price: ₹80</p>
+        <input type="number" min="1" value="1" id="qty-jalebi" />
+        <button onclick="addToCart('Jalebi', 80, document.getElementById('qty-jalebi').value)">Add to Cart</button>
+      </div>
+      <!-- 16 Mathura Peda -->
+      <div class="card">
+        <img src="./images/Peda.jpg" alt="Mathura Peda" />
+        <h3>Mathura Peda</h3>
+        <p>Rich and grainy delight</p>
+        <p>Price: ₹150</p>
+        <input type="number" min="1" value="1" id="qty-peda" />
+        <button onclick="addToCart('Mathura Peda', 150, document.getElementById('qty-peda').value)">Add to Cart</button>
+      </div>
+      <!-- 17 Chocolate Brownie -->
+      <div class="card">
+        <img src="./images/brownie.jpg" alt="Chocolate Brownie" />
+        <h3>Chocolate Brownie</h3>
+        <p>Rich and fudgy chocolate treat</p>
+        <p>Price: ₹120</p>
+        <input type="number" min="1" value="1" id="qty-brownie" />
+        <button onclick="addToCart('Chocolate Brownie', 120, document.getElementById('qty-brownie').value)">Add to Cart</button>
+      </div>
+      <!-- 18 Fresh Fruit Salad -->
+      <div class="card">
+        <img src="./images/Fruit-salad.jpg" alt="Fresh Fruit Salad" />
+        <h3>Fresh Fruit Salad</h3>
+        <p>Seasonal fruits drizzled with honey</p>
+        <p>Price: ₹99</p>
+        <input type="number" min="1" value="1" id="qty-fruitsalad" />
+        <button onclick="addToCart('Fresh Fruit Salad', 99, document.getElementById('qty-fruitsalad').value)">Add to Cart</button>
+      </div>
+    </div>
+
+    <button class="place-order-btn" onclick="placeOrder()">Place Order</button>
+    <p id="order-message"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 BlissfulBites. All rights reserved.</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    const cart = [];
+
+function addToCart(item, price, qty) {
+  cart.push({ item, price, qty });
+  alert(`${qty} x ${item} added to cart!`);
+}
+
+function placeOrder() {
+  if (cart.length === 0) {
+    document.getElementById('order-message').innerText = '🛒 Please add items to your cart before placing an order.';
+  } else {
+    let total = cart.reduce((sum, c) => sum + c.price * c.qty, 0);
+    let orderDetails = 'Your Order: \n';
+    
+    cart.forEach(c => {
+      orderDetails += `${c.qty} x ${c.item} @ ₹${c.price} each\n`;
+    });
+
+    orderDetails += `\nTotal: ₹${total}`;
+
+    document.getElementById('order-message').innerText = `✅ Order placed successfully!\n\n${orderDetails}`;
+    cart.length = 0;  // Clear cart after order
+  }
+}
+
+  </script>
+</body>
+</html>
